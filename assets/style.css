@@ -1,0 +1,504 @@
+/* Reset e configurações base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    position: relative;
+}
+
+/* Linha Superior do Cabeçalho */
+.linha-superior {
+    background: rgb(252, 86, 48);
+    padding: 15px;
+}
+
+.container-superior {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.imagem-logo{
+    width: 50px;
+    height: 50px;
+}
+
+
+.texto-logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-sair {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+}
+
+.link-sair:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: white;
+}
+
+/* Linha Inferior - Navbar */
+.linha-inferior {
+    background: rgb(251, 119, 47);
+    padding: 12px 0;
+}
+
+.container-navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navegacao .menu-principal {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+.link-menu {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+.link-menu:hover {
+    opacity: 0.8;
+}
+
+/* Carrossel Principal */
+.carrossel-principal {
+    position: relative;
+}
+
+/* Banner Propaganda */
+.banner-propaganda {
+    background: white;
+    padding: 20px 0;
+}
+
+.container-propaganda {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.conteudo-propaganda {
+    color: white;
+    height: auto;
+    width: 50px;
+}
+
+/* Título Descobertas do Dia */
+.secao-titulo-descobertas {
+    background: white;
+    padding: 30px 0 20px;
+}
+
+.container-titulo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.titulo-descobertas {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-transform: lowercase;
+    margin: 0;
+    border-bottom: 2px solid #ff5722;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Seção de Produtos */
+.secao-produtos {
+    background: white;
+    padding: 20px 0 40px;
+}
+
+.container-produtos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.produto-item {
+    background: white;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.produto-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.imagem-produto {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+
+.ft-prod{
+    width: 100%;
+    height: 100%;
+}
+
+.placeholder-camiseta {
+    width: 100%;
+    height: 100%;
+    background: #2c2c2c;
+    position: relative;
+}
+
+.placeholder-camiseta::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    height: 20%;
+    background: #1a1a1a;
+}
+
+.placeholder-camiseta::after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    height: 50%;
+    background: #1a1a1a;
+}
+
+.info-produto {
+    padding: 12px;
+    text-align: center;
+}
+
+.preco-produto {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff5722;
+    margin: 0;
+}
+
+/* Rodapé */
+.rodape {
+    background: #f0f0f0;
+    padding: 35px 0 0;
+    margin-top: 40px;
+}
+
+.container-rodape {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.titulo-coluna-rodape {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.lista-links-rodape {
+    list-style: none;
+}
+
+.lista-links-rodape li {
+    margin-bottom: 6px;
+}
+
+.link-rodape {
+    color: #666;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+}
+
+.link-rodape:hover {
+    color: #ff5722;
+}
+
+.formas-pagamento {
+    margin-bottom: 15px;
+}
+
+.linha-pagamento {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.icone-pagamento {
+    width: 35px;
+    height: 22px;
+    background: #ccc;
+    border: 1px solid #ddd;
+}
+
+.visa { background: linear-gradient(135deg, #1a1f71, #0066cc); }
+.master { background: linear-gradient(135deg, #eb001b, #ff5f00); }
+.elo { background: linear-gradient(135deg, #ffcb00, #ff6900); }
+.amex { background: linear-gradient(135deg, #006fcf, #0077be); }
+.hiper { background: linear-gradient(135deg, #cc092f, #ed1c24); }
+.pix { background: linear-gradient(135deg, #00d4aa, #00b894); }
+.boleto { background: linear-gradient(135deg, #ff8c00, #ffa500); }
+
+
+.icone-social {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.lista-redes-sociais{
+    list-style: none;
+}
+
+.icone-rede{
+    height: 25px;
+    width: 25px;
+}
+
+.info-atendimento {
+    margin-bottom: 20px;
+}
+
+.telefone-atendimento {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.horario-atendimento {
+    font-size: 10px;
+    color: #666;
+    line-height: 1.3;
+}
+
+.qr-code-container {
+    text-align: center;
+}
+
+.qr-code {
+    width: 70px;
+    height: 70px;
+    background: #333;
+    margin: 0 auto 8px;
+    position: relative;
+}
+
+.qr-code::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    border-left: none;
+    border-top: none;
+}
+
+.texto-qr {
+    font-size: 10px;
+    color: #666;
+    margin: 0;
+}
+
+.linha-rodape-inferior {
+    background: #e0e0e0;
+    padding: 12px 0;
+    margin-top: 30px;
+}
+
+.container-inferior {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.texto-copyright {
+    font-size: 10px;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .grade-produtos {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+    
+    .container-rodape {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    
+    .carrossel-principal {
+        height: 300px;
+    }
+    
+    .titulo-carrossel {
+        font-size: 28px;
+        padding: 12px 24px;
+    }
+    
+    .subtitulo-carrossel {
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .linha-superior,
+    .linha-inferior {
+        text-align: center;
+    }
+    
+    .container-superior {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .menu-principal {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .grade-produtos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .carrossel-principal {
+        height: 250px;
+    }
+    
+    .titulo-carrossel {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+    
+    .subtitulo-carrossel {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+    
+    .container-rodape {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .propaganda-menor {
+        height: 120px;
+    }
+    
+    .titulo-propaganda {
+        font-size: 20px;
+    }
+    
+    .texto-propaganda {
+        font-size: 14px;
+    }
+    
+    .titulo-descobertas {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grade-produtos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .carrossel-principal {
+        height: 200px;
+    }
+    
+    .titulo-carrossel {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+    
+    .subtitulo-carrossel {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    
+    .subtitulo-carrossel strong {
+        font-size: 18px;
+    }
+    
+    .propaganda-menor {
+        height: 100px;
+    }
+    
+    .titulo-propaganda {
+        font-size: 18px;
+    }
+    
+    .texto-propaganda {
+        font-size: 12px;
+    }
+}
