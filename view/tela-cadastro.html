@@ -3,36 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xhopii - Redefinir senha</title>
+    <title>Xhopii - Cadastro Cliente</title>
     <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header2">
-        <div class="header-content2">
+   <!-- Cabeçalho -->
+   <header class="cabecalho">
+    <!-- Linha Superior -->
+    <div class="linha-superior">
+        <div class="container-superior">
             <div class="logo">
-                <img src="..\assets\img\logo.png" alt="" class="imagem-logo">
-                <div class="logo-text">Xhopii</div>
+                <div>
+                    <div>
+                      <img src="..\assets\img\logo.png" alt="" class="imagem-logo">
+                    </div>
+                </div>
+                <span class="texto-logo">Xhopii</span>
             </div>
-            <h1 class="header-title">Redefinir senha</h1>
-            <div class="help-link">
-                <a href="#">Precisa de ajuda?</a>
+            <div class="usuario-area">
+                <a href="#" class="link-sair">Sair</a>
             </div>
         </div>
-    </header>
+    </div>
+    <!-- Linha Inferior - Navbar -->
+    <div class="linha-inferior">
+        <div class="container-navbar">
+            <nav class="navegacao">
+                <ul class="menu-principal">
+                    <li><a href="#" class="link-menu">Home</a></li>
+                    <li><a href="#" class="link-menu">Cadastro Cliente</a></li>
+                    <li><a href="#" class="link-menu">Cadastro Funcionário</a></li>
+                    <li><a href="#" class="link-menu">Cadastro Produto</a></li>
+                    <li><a href="#" class="link-menu">Ver Clientes</a></li>
+                    <li><a href="#" class="link-menu">Ver Funcionário</a></li>
+                    <li><a href="#" class="link-menu">Ver Produto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="reset-form-container">
-            <a href="tela-login.html" class="back-arrow">←</a>
-            <h2 class="form-title">Redefinir senha</h2>
-            <form class="reset-form">
-                <input type="email" placeholder="Email" class="input-field">
-                <button type="submit" class="submit-button">ENVIAR</button>
+        <div class="form-container">
+            <h2 class="form-title">Cadastrar Cliente</h2>
+            
+            <form class="cadastro-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Nome" class="input-field">
+                </div>
+                
+                <div class="input-group">
+                    <input type="text" placeholder="Sobrenome" class="input-field">
+                </div>
+                
+                <div class="input-group">
+                    <input type="text" placeholder="CPF" class="input-field">
+                </div>
+                
+                <div class="input-group">
+                    <input type="date" placeholder="dd/mm/aaaa" class="input-field date-field">
+                </div>
+                
+                <div class="input-group">
+                    <input type="tel" placeholder="Telefone" class="input-field">
+                </div>
+                
+                <div class="input-group">
+                    <input type="email" placeholder="Email" class="input-field">
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" placeholder="Senha" class="input-field">
+                </div>
+                
+                <div class="photo-section">
+                    <p class="photo-label">Selecionar foto do perfil</p>
+                    <div class="photo-options">
+                        <label class="photo-option">
+                            <input type="radio" name="photo" value="escolher">
+                            <span class="radio-text">Escolher arquivo</span>
+                        </label>
+                        <label class="photo-option">
+                            <input type="radio" name="photo" value="nenhum" checked>
+                            <span class="radio-text">Nenhum arquivo selecionado</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-button">CADASTRAR</button>
             </form>
         </div>
     </main>
-
     <footer class="rodape">
         <div class="container-rodape">
             <div class="coluna-rodape">
