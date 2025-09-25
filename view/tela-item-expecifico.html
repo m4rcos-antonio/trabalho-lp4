@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="..\assets\style.css">
+    <script type="text/javascript" src="..\assets\script.js"></script>
+    <title>Xhopee</title>
+</head>
+<body>
+    
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <!-- Linha Superior -->
+        <div class="linha-superior">
+            <div class="container-superior">
+                <div class="logo">
+                    <div>
+                        <div>
+                          <img src="..\assets\img\logo.png" alt="" class="imagem-logo">
+                        </div>
+                    </div>
+                    <span class="texto-logo">Xhopii</span>
+                </div>
+                <div class="usuario-area">
+                    <a href="#" class="link-sair">Sair</a>
+                </div>
+            </div>
+        </div>
+        <!-- Linha Inferior - Navbar -->
+        <div class="linha-inferior">
+            <div class="container-navbar">
+                <nav class="navegacao">
+                    <ul class="menu-principal">
+                        <li><a href="home.html" class="link-menu">Home</a></li>
+                        <li><a href="tela-cadastro.html" class="link-menu">Cadastro Cliente</a></li>
+                        <li><a href="tela-cadastro-funcionario.html" class="link-menu">Cadastro Funcionário</a></li>
+                        <li><a href="tela-cadastro-produto.html" class="link-menu">Cadastro Produto</a></li>
+                        <li><a href="#" class="link-menu">Ver Clientes</a></li>
+                        <li><a href="#" class="link-menu">Ver Funcionário</a></li>
+                        <li><a href="#" class="link-menu">Ver Produto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="produto-imagem">
+        <div class="produto-miniatura">
+            <img src="..\assets\img\produto1.png" onclick="selecionarImgProduto(this)">
+            <img src="..\assets\img\produto2.png" onclick="selecionarImgProduto(this)">
+            <img src="..\assets\img\produto3.png" onclick="selecionarImgProduto(this)">
+            <img src="..\assets\img\produto4.png" onclick="selecionarImgProduto(this)">
+            <img src="..\assets\img\produto5.png" onclick="selecionarImgProduto(this)">
+        </div>
+        <div class="produto-principal">
+            <img id="imgPrincipal" src="..\assets\img\produto1.png">
+        </div>
+    </div>
+
+    <div class="produto-detalhes">
+        <h1>Camisa Desenvolvedor Front-End CSS</h1>
+        <h2 id="precoProduto">R$56,90</h2>
+        <p id="qtdDisponivel" >171 peças dísponíveis</p>
+        <p>Modelos:</p>
+        <button class="botao" id="btnModeloPreto" onclick="mudarPreco(this)">Preto</button>
+        <button class="botao" id="btnModeloAzul" onclick="mudarPreco(this)">Azul</button>
+        <button class="botao" id="btnModeloVerde" onclick="mudarPreco(this)">Verde</button>
+        <button class="botao" id="btnModeloCinza" onclick="mudarPreco(this)">Cinza</button>
+        <button class="botao" id="btnModeloRosa" onclick="mudarPreco(this)">Rosa</button>
+
+        <p>Tamanhos:</p>
+        <button class="botao" id="btnTamanhoP" onclick="mudarDisponivel(this)">P</button>
+        <button class="botao" id="btnTamanhoM" onclick="mudarDisponivel(this)">M</button>
+        <button class="botao" id="btnTamanhoG" onclick="mudarDisponivel(this)">G</button>
+        <button class="botao" id="btnTamanhoGG" onclick="mudarDisponivel(this)">GG</button>
+        <p id="tamanhoSelecionado" >Tamanho Selecionado: P</p>
+        <button id="botaoComprar">Comprar Agora</button>
+    </div>
+</body>
+</html>
