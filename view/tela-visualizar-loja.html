@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xhopii - Visualizar Loja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <!-- Linha Superior -->
+        <div class="linha-superior">
+            <div class="container-superior">
+                <div class="logo">
+                    <div>
+                        <div>
+                          <img src="..\assets\img\logo.png" alt="" class="imagem-logo">
+                        </div>
+                    </div>
+                    <span class="texto-logo">Xhopii</span>
+                </div>
+                <div class="usuario-area">
+                    <a href="#" class="link-sair">Sair</a>
+                </div>
+            </div>
+        </div>
+        <!-- Linha Inferior - Navbar -->
+        <div class="linha-inferior">
+            <div class="container-navbar">
+                <nav class="navegacao">
+                    <ul class="menu-principal">
+                        <li><a href="home.html" class="link-menu">Home</a></li>
+                        <li><a href="tela-cadastro.html" class="link-menu">Cadastro Cliente</a></li>
+                        <li><a href="tela-cadastro-funcionario.html" class="link-menu">Cadastro Funcionário</a></li>
+                        <li><a href="tela-cadastro-produto.html" class="link-menu">Cadastro Produto</a></li>
+                        <li><a href="#" class="link-menu">Ver Clientes</a></li>
+                        <li><a href="tela-visualizar-funcionario.html" class="link-menu">Ver Funcionário</a></li>
+                        <li><a href="tela-visualizar-produto.html" class="link-menu">Ver Produto</a></li>
+                        <li><a href="tela-visualizar-loja.html" class="link-menu">Ver Loja</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página de visualização da loja -->
+    <main>
+        <!-- Seção de Informações da Loja -->
+        <section class="secao-loja">
+            <div class="container-loja">
+                <div class="cabecalho-loja">
+                    <div class="logo-loja">
+                        <img src="..\assets\img\logo.png" alt="Logo da Loja" class="imagem-logo-loja">
+                    </div>
+                    <div class="info-loja">
+                        <h1 class="nome-loja">Xhopii - Loja Virtual</h1>
+                        <p class="descricao-loja">Sua loja de roupas e acessórios com os melhores preços e qualidade</p>
+                        <div class="detalhes-loja">
+                            <p class="endereco-loja"><strong>Endereço:</strong> Rua das Flores, 123 - Centro, São Paulo - SP</p>
+                            <p class="telefone-loja"><strong>Telefone:</strong> (11) 1234-5678</p>
+                            <p class="email-loja"><strong>E-mail:</strong> contato@xhopii.com.br</p>
+                            <p class="horario-loja"><strong>Horário:</strong> Segunda a Sexta: 9h às 18h | Sábado: 9h às 14h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estatísticas da Loja -->
+                <div class="estatisticas-loja">
+                    <div class="estatistica-item">
+                        <h3 class="numero-estatistica">250+</h3>
+                        <p class="label-estatistica">Produtos</p>
+                    </div>
+                    <div class="estatistica-item">
+                        <h3 class="numero-estatistica">1.500+</h3>
+                        <p class="label-estatistica">Clientes</p>
+                    </div>
+                    <div class="estatistica-item">
+                        <h3 class="numero-estatistica">5.000+</h3>
+                        <p class="label-estatistica">Vendas</p>
+                    </div>
+                    <div class="estatistica-item">
+                        <h3 class="numero-estatistica">4.8★</h3>
+                        <p class="label-estatistica">Avaliação</p>
+                    </div>
+                </div>
+
+                <!-- Produtos em Destaque -->
+                <div class="secao-produtos-destaque">
+                    <h2 class="titulo-secao">Produtos em Destaque</h2>
+                    <div class="grade-produtos-destaque">
+                        <div class="produto-destaque">
+                            <div class="imagem-produto-destaque">
+                                <img src="..\assets\img\produto1.png" alt="Produto Destaque 1" class="ft-prod-destaque">
+                            </div>
+                            <div class="info-produto-destaque">
+                                <h3 class="nome-produto-destaque">Camiseta Desenvolvedor Front End CSS</h3>
+                                <p class="preco-produto-destaque">R$ 39,90</p>
+                            </div>
+                        </div>
+                        
+                        <div class="produto-destaque">
+                            <div class="imagem-produto-destaque">
+                                <img src="..\assets\img\produto1.png" alt="Produto Destaque 2" class="ft-prod-destaque">
+                            </div>
+                            <div class="info-produto-destaque">
+                                <h3 class="nome-produto-destaque">Camiseta Desenvolvedor Back End</h3>
+                                <p class="preco-produto-destaque">R$ 42,90</p>
+                            </div>
+                        </div>
+                        
+                        <div class="produto-destaque">
+                            <div class="imagem-produto-destaque">
+                                <img src="..\assets\img\produto1.png" alt="Produto Destaque 3" class="ft-prod-destaque">
+                            </div>
+                            <div class="info-produto-destaque">
+                                <h3 class="nome-produto-destaque">Camiseta Full Stack Developer</h3>
+                                <p class="preco-produto-destaque">R$ 45,90</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sobre a Loja -->
+                <div class="secao-sobre-loja">
+                    <h2 class="titulo-secao">Sobre Nossa Loja</h2>
+                    <div class="conteudo-sobre">
+                        <p>A Xhopii é uma loja especializada em roupas e acessórios para desenvolvedores e profissionais de tecnologia. Fundada em 2020, nossa missão é oferecer produtos de qualidade com designs únicos que representam a cultura tech.</p>
+                        <p>Trabalhamos com fornecedores selecionados e garantimos a qualidade de todos os nossos produtos. Nossa equipe está sempre em busca das últimas tendências para oferecer o melhor para nossos clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container-rodape">
+            <div class="coluna-rodape">
+                <h4 class="titulo-coluna-rodape">ATENDIMENTO AO CLIENTE</h4>
+                <ul class="lista-links-rodape">
+                    <li><a href="#" class="link-rodape">Central de ajuda</a></li>
+                    <li><a href="#" class="link-rodape">Como comprar</a></li>
+                    <li><a href="#" class="link-rodape">Métodos de pagamento</a></li>
+                    <li><a href="#" class="link-rodape">Garantia Xhopii</a></li>
+                    <li><a href="#" class="link-rodape">Devolução e Reembolso</a></li>
+                    <li><a href="#" class="link-rodape">Fale Conosco</a></li>
+                    <li><a href="#" class="link-rodape">Ouvidoria</a></li>
+                </ul>
+            </div>
+            
+            <div class="coluna-rodape">
+                <h4 class="titulo-coluna-rodape">SOBRE A XHOPII</h4>
+                <ul class="lista-links-rodape">
+                    <li><a href="#" class="link-rodape">Sobre nós</a></li>
+                    <li><a href="#" class="link-rodape">Política Xhopii</a></li>
+                    <li><a href="#" class="link-rodape">Politica de Privacidade</a></li>
+                    <li><a href="#" class="link-rodape">Programa Aliados Xhopii</a></li>
+                    <li><a href="#" class="link-rodape">Ofertas relâmpago</a></li>
+                    <li><a href="#" class="link-rodape">Xhopii Blog</a></li>
+                    <li><a href="#" class="link-rodape">Impresa</a></li>
+                </ul>
+            </div>
+            
+            <div class="coluna-rodape coluna-pagamento">
+                <h4 class="titulo-coluna-rodape">PAGAMENTO</h4>
+                <div class="formas-pagamento">
+                    <div class="linha-pagamento">
+                        <img src="..\assets\img\logo-visa.png" alt="">
+                        <img src="..\assets\img\logo-mastercard.png" alt="">
+                        <img src="..\assets\img\logo-elo.png" alt="">
+                    </div>
+                    <div class="linha-pagamento">
+                        <img src="..\assets\img\logo-american-express.png" alt="">
+                        <img src="..\assets\img\logo-hipercard.png" alt="">
+                        <img src="..\assets\img\logo-pix.png" alt="">
+                    </div>
+                    <div class="linha-pagamento">
+                        <img src="..\assets\img\logo-boleto.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="coluna-rodape coluna-redes">
+                <h4 class="titulo-coluna-rodape">SIGA-NOS</h4>
+                <ul class="lista-redes-sociais">
+                  <li><img src="..\assets\img\logo-instagram.png" alt="" class="icone-rede"> Instagram</li>
+                  <li><img src="..\assets\img\logo-twitter.png" alt="" class="icone-rede"> Twitter</li>
+                  <li><img src="..\assets\img\logo-facebook.png" alt="" class="icone-rede"> Facebook</li>
+                  <li><img src="..\assets\img\logo-youtube.png" alt="" class="icone-rede"> Youtube</li>
+                  <li><img src="..\assets\img\logo-linkedln.png" alt="" class="icone-rede"> Linkedin</li>
+                </ul>
+            </div>
+            
+            <div class="coluna-rodape coluna-atendimento">
+                <h4 class="titulo-coluna-rodape">ATENDIMENTO AO CLIENTE</h4>
+                <div class="qr-code-container">
+                    <img src="..\assets\img\qr-code.png" alt="">
+                    <p class="texto-qr">Baixe o APP</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="linha-rodape-inferior">
+            <div class="container-inferior">
+                <p class="texto-copyright">© 2025 Xhopii. Todos Direitos Academicos Reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
