@@ -10,6 +10,9 @@ body {
     line-height: 1.4;
     color: #333;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Cabeçalho */
@@ -298,15 +301,6 @@ body {
     background: #ccc;
     border: 1px solid #ddd;
 }
-
-.visa { background: linear-gradient(135deg, #1a1f71, #0066cc); }
-.master { background: linear-gradient(135deg, #eb001b, #ff5f00); }
-.elo { background: linear-gradient(135deg, #ffcb00, #ff6900); }
-.amex { background: linear-gradient(135deg, #006fcf, #0077be); }
-.hiper { background: linear-gradient(135deg, #cc092f, #ed1c24); }
-.pix { background: linear-gradient(135deg, #00d4aa, #00b894); }
-.boleto { background: linear-gradient(135deg, #ff8c00, #ffa500); }
-
 
 .icone-social {
     width: 28px;
@@ -2400,4 +2394,8 @@ body {
     .conteudo-sobre p {
         font-size: 14px;
     }
+}
+
+main {
+    flex-grow: 1;
 }

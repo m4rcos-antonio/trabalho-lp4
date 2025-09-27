@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xhopii - Cadastro Produto</title>
+    <title>Xhopii - Visualizar Cliente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-   <!-- Cabeçalho -->
-   <header class="cabecalho">
-    <!-- Linha Superior -->
-    <div class="linha-superior">
-        <div class="container-superior">
-            <div class="logo">
-                <div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <!-- Linha Superior -->
+        <div class="linha-superior">
+            <div class="container-superior">
+                <div class="logo">
                     <div>
-                      <img src="..\assets\img\logo.png" alt="" class="imagem-logo">
+                        <div>
+                          <img src="..\assets\img\logo.png" alt="" class="imagem-logo">
+                        </div>
                     </div>
+                    <span class="texto-logo">Xhopii</span>
                 </div>
-                <span class="texto-logo">Xhopii</span>
-            </div>
-            <div class="usuario-area">
-                <a href="#" class="link-sair">Sair</a>
+                <div class="usuario-area">
+                    <a href="#" class="link-sair">Sair</a>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Linha Inferior - Navbar -->
-    <div class="linha-inferior">
-        <div class="container-navbar">
-            <nav class="navegacao">
-                <ul class="menu-principal">
+        <!-- Linha Inferior - Navbar -->
+        <div class="linha-inferior">
+            <div class="container-navbar">
+                <nav class="navegacao">
+                    <ul class="menu-principal">
                         <li><a href="home.html" class="link-menu">Home</a></li>
                         <li><a href="tela-cadastro.html" class="link-menu">Cadastro Cliente</a></li>
                         <li><a href="tela-cadastro-funcionario.html" class="link-menu">Cadastro Funcionário</a></li>
@@ -38,52 +41,62 @@
                         <li><a href="tela-visualizar-funcionario.html" class="link-menu">Ver Funcionário</a></li>
                         <li><a href="tela-visualizar-produto.html" class="link-menu">Ver Produto</a></li>
                         <li><a href="tela-visualizar-loja.html" class="link-menu">Ver Loja</a></li>
-                </ul>
-            </nav>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+<main class="container my-5">
+    <h1 class="mb-4">Visualização de Clientes</h1>
+    <div class="card">
+        <div class="card-header">
+            Lista de Clientes Cadastrados
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Exemplo de cliente 1 -->
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>João da Silva</td>
+                        <td>joao.silva@email.com</td>
+                        <td>(11) 98765-4321</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm">Editar</button>
+                            <button class="btn btn-danger btn-sm">Excluir</button>
+                        </td>
+                    </tr>
+                    <!-- Exemplo de cliente 2 -->
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Maria Oliveira</td>
+                        <td>maria.oliveira@email.com</td>
+                        <td>(21) 91234-5678</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm">Editar</button>
+                            <button class="btn btn-danger btn-sm">Excluir</button>
+                        </td>
+                    </tr>
+                    <!-- Adicione mais linhas de clientes aqui -->
+                </tbody>
+            </table>
         </div>
     </div>
-</header>
-
-<main class="main-content">
-    <div class="form-container">
-        <h2 class="form-title">Cadastrar Produto</h2>
-        
-        <form class="cadastro-form">
-            <div class="input-group">
-                <input type="text" placeholder="Nome" class="input-field">
-            </div>
-            
-            <div class="input-group">
-                <input type="text" placeholder="Fabricante" class="input-field">
-            </div>
-           
-            <div class="input-group">
-                <input type="text" placeholder="Descrição" class="input-field">
-            </div>
-            
-            <div class="input-group">
-                <input type="number" placeholder="Valor" class="input-field">
-            </div>
-            
-            <div class="input-group">
-                <input type="number" placeholder="Quantidade" class="input-field">
-            </div>
-            
-            <div class="photo-section">
-                <p class="photo-label">Selecionar foto de perfil:</p>
-                <div class="file-input-group">
-                    <label for="file-upload" class="custom-file-upload">
-                        Escolher arquivo
-                    </label>
-                    <input id="file-upload" type="file"/>
-                    <span class="file-name">Nenhum arquivo escolhido</span>
-                </div>
-            </div>
-            
-            <button type="submit" class="submit-button">CADASTRAR</button>
-        </form>
-    </div>
 </main>
+
+
+    <!-- Rodapé -->
     <footer class="rodape">
         <div class="container-rodape">
             <div class="coluna-rodape">
