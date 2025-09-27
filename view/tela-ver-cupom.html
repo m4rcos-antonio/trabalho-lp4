@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <title>Ver Cupom</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <!-- Linha Superior -->
+        <div class="linha-superior">
+            <div class="container-superior">
+                <div class="logo">
+                    <div>
+                        <div>
+                          <img src="..\assets\img\logo.png" alt="" class="imagem-logo">
+                        </div>
+                    </div>
+                    <span class="texto-logo">Xhopii</span>
+                </div>
+                <div class="usuario-area">
+                    <a href="#" class="link-sair">Sair</a>
+                </div>
+            </div>
+        </div>
+        <!-- Linha Inferior - Navbar -->
+        <div class="linha-inferior">
+            <div class="container-navbar">
+                <nav class="navegacao">
+                    <ul class="menu-principal">
+                        <li><a href="home.html" class="link-menu">Home</a></li>
+                        <li><a href="tela-cadastro.html" class="link-menu">Cadastro Cliente</a></li>
+                        <li><a href="tela-cadastro-funcionario.html" class="link-menu">Cadastro Funcionário</a></li>
+                        <li><a href="tela-cadastro-produto.html" class="link-menu">Cadastro Produto</a></li>
+                        <li><a href="#" class="link-menu">Ver Clientes</a></li>
+                        <li><a href="#" class="link-menu">Ver Funcionário</a></li>
+                        <li><a href="#" class="link-menu">Ver Produto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Gerenciar Cupons de Desconto</h1>
+                <div class="actions">
+                    <input type="text" placeholder="Buscar cupom..." class="search-input">
+                    <a href="tela-cadastro-cupom.html" class="btn-primary">Novo Cupom</a>
+                </div>
+            </div>
+
+            <div class="cupons-grid">
+                <!-- Cupom 1 -->
+                <div class="cupom-card">
+                    <div class="cupom-header">
+                        <div class="cupom-code">DESCONTO10</div>
+                        <div class="cupom-status active">Ativo</div>
+                    </div>
+                    <div class="cupom-body">
+                        <h3 class="cupom-title">Desconto de 10% para novos clientes</h3>
+                        <div class="cupom-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Tipo:</span>
+                                <span class="detail-value">Percentual</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Desconto:</span>
+                                <span class="detail-value">10%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Válido até:</span>
+                                <span class="detail-value">31/12/2024</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Usos:</span>
+                                <span class="detail-value">45/100</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Valor mínimo:</span>
+                                <span class="detail-value">R$ 50,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cupom-actions">
+                        <button class="btn-edit">Editar</button>
+                        <button class="btn-delete">Excluir</button>
+                        <button class="btn-toggle">Desativar</button>
+                    </div>
+                </div>
+
+                <!-- Cupom 2 -->
+                <div class="cupom-card">
+                    <div class="cupom-header">
+                        <div class="cupom-code">FRETE20</div>
+                        <div class="cupom-status active">Ativo</div>
+                    </div>
+                    <div class="cupom-body">
+                        <h3 class="cupom-title">Frete grátis + 20% de desconto</h3>
+                        <div class="cupom-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Tipo:</span>
+                                <span class="detail-value">Percentual</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Desconto:</span>
+                                <span class="detail-value">20%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Válido até:</span>
+                                <span class="detail-value">15/01/2025</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Usos:</span>
+                                <span class="detail-value">12/50</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Valor mínimo:</span>
+                                <span class="detail-value">R$ 100,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cupom-actions">
+                        <button class="btn-edit">Editar</button>
+                        <button class="btn-delete">Excluir</button>
+                        <button class="btn-toggle">Desativar</button>
+                    </div>
+                </div>
+
+                <!-- Cupom 3 -->
+                <div class="cupom-card">
+                    <div class="cupom-header">
+                        <div class="cupom-code">FIXO25</div>
+                        <div class="cupom-status inactive">Inativo</div>
+                    </div>
+                    <div class="cupom-body">
+                        <h3 class="cupom-title">R$ 25 de desconto em compras acima de R$ 150</h3>
+                        <div class="cupom-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Tipo:</span>
+                                <span class="detail-value">Valor Fixo</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Desconto:</span>
+                                <span class="detail-value">R$ 25,00</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Válido até:</span>
+                                <span class="detail-value">30/11/2024</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Usos:</span>
+                                <span class="detail-value">78/200</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Valor mínimo:</span>
+                                <span class="detail-value">R$ 150,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cupom-actions">
+                        <button class="btn-edit">Editar</button>
+                        <button class="btn-delete">Excluir</button>
+                        <button class="btn-toggle">Ativar</button>
+                    </div>
+                </div>
+
+                <!-- Cupom 4 -->
+                <div class="cupom-card">
+                    <div class="cupom-header">
+                        <div class="cupom-code">PRIMEIRA15</div>
+                        <div class="cupom-status active">Ativo</div>
+                    </div>
+                    <div class="cupom-body">
+                        <h3 class="cupom-title">15% para primeira compra</h3>
+                        <div class="cupom-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Tipo:</span>
+                                <span class="detail-value">Percentual</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Desconto:</span>
+                                <span class="detail-value">15%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Válido até:</span>
+                                <span class="detail-value">31/03/2025</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Usos:</span>
+                                <span class="detail-value">156/500</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Valor mínimo:</span>
+                                <span class="detail-value">R$ 30,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cupom-actions">
+                        <button class="btn-edit">Editar</button>
+                        <button class="btn-delete">Excluir</button>
+                        <button class="btn-toggle">Desativar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container-rodape">
+            <div class="coluna-rodape">
+                <h4 class="titulo-coluna-rodape">ATENDIMENTO AO CLIENTE</h4>
+                <ul class="lista-links-rodape">
+                    <li><a href="#" class="link-rodape">Central de ajuda</a></li>
+                    <li><a href="#" class="link-rodape">Como comprar</a></li>
+                    <li><a href="#" class="link-rodape">Métodos de pagamento</a></li>
+                    <li><a href="#" class="link-rodape">Garantia Xhopii</a></li>
+                    <li><a href="#" class="link-rodape">Devolução e Reembolso</a></li>
+                    <li><a href="#" class="link-rodape">Fale Conosco</a></li>
+                    <li><a href="#" class="link-rodape">Ouvidoria</a></li>
+                </ul>
+            </div>
+            
+            <div class="coluna-rodape">
+                <h4 class="titulo-coluna-rodape">SOBRE A XHOPII</h4>
+                <ul class="lista-links-rodape">
+                    <li><a href="#" class="link-rodape">Sobre nós</a></li>
+                    <li><a href="#" class="link-rodape">Política Xhopii</a></li>
+                    <li><a href="#" class="link-rodape">Politica de Privacidade</a></li>
+                    <li><a href="#" class="link-rodape">Programa Aliados Xhopii</a></li>
+                    <li><a href="#" class="link-rodape">Ofertas relâmpago</a></li>
+                    <li><a href="#" class="link-rodape">Xhopii Blog</a></li>
+                    <li><a href="#" class="link-rodape">Impresa</a></li>
+                </ul>
+            </div>
+            
+            <div class="coluna-rodape coluna-pagamento">
+                <h4 class="titulo-coluna-rodape">PAGAMENTO</h4>
+                <div class="formas-pagamento">
+                    <div class="linha-pagamento">
+                        <img src="..\assets\img\logo-visa.png" alt="">
+                        <img src="..\assets\img\logo-mastercard.png" alt="">
+                        <img src="..\assets\img\logo-elo.png" alt="">
+                    </div>
+                    <div class="linha-pagamento">
+                        <img src="..\assets\img\logo-american-express.png" alt="">
+                        <img src="..\assets\img\logo-hipercard.png" alt="">
+                        <img src="..\assets\img\logo-pix.png" alt="">
+                    </div>
+                    <div class="linha-pagamento">
+                        <img src="..\assets\img\logo-boleto.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="coluna-rodape coluna-redes">
+                <h4 class="titulo-coluna-rodape">SIGA-NOS</h4>
+                <ul class="lista-redes-sociais">
+                  <li><img src="..\assets\img\logo-instagram.png" alt="" class="icone-rede"> Instagram</li>
+                  <li><img src="..\assets\img\logo-twitter.png" alt="" class="icone-rede"> Twitter</li>
+                  <li><img src="..\assets\img\logo-facebook.png" alt="" class="icone-rede"> Facebook</li>
+                  <li><img src="..\assets\img\logo-youtube.png" alt="" class="icone-rede"> Youtube</li>
+                  <li><img src="..\assets\img\logo-linkedln.png" alt="" class="icone-rede"> Linkedin</li>
+                </ul>
+            </div>
+            
+            <div class="coluna-rodape coluna-atendimento">
+                <h4 class="titulo-coluna-rodape">ATENDIMENTO AO CLIENTE</h4>
+                <div class="qr-code-container">
+                    <img src="..\assets\img\qr-code.png" alt="">
+                    <p class="texto-qr">Baixe o APP</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="linha-rodape-inferior">
+            <div class="container-inferior">
+                <p class="texto-copyright">© 2025 Xhopii. Todos Direitos Academicos Reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>

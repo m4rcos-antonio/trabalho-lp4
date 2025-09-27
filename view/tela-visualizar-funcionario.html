@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xhopii - Ver Funcionários</title>
+    <link rel="stylesheet" href="../assets/style.css">
+<body>
+   <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <!-- Linha Superior -->
+        <div class="linha-superior">
+            <div class="container-superior">
+                <div class="logo">
+                    <div>
+                        <div>
+                          <img src="..\assets\img\logo.png" alt="" class="imagem-logo">
+                        </div>
+                    </div>
+                    <span class="texto-logo">Xhopii</span>
+                </div>
+                <div class="usuario-area">
+                    <a href="#" class="link-sair">Sair</a>
+                </div>
+            </div>
+        </div>
+        <!-- Linha Inferior - Navbar -->
+        <div class="linha-inferior">
+            <div class="container-navbar">
+                <nav class="navegacao">
+                    <ul class="menu-principal">
+                        <li><a href="home.html" class="link-menu">Home</a></li>
+                        <li><a href="tela-cadastro.html" class="link-menu">Cadastro Cliente</a></li>
+                        <li><a href="tela-cadastro-funcionario.html" class="link-menu">Cadastro Funcionário</a></li>
+                        <li><a href="tela-cadastro-produto.html" class="link-menu">Cadastro Produto</a></li>
+                        <li><a href="#" class="link-menu">Ver Clientes</a></li>
+                        <li><a href="#" class="link-menu">Ver Funcionário</a></li>
+                        <li><a href="#" class="link-menu">Ver Produto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="conteudo-principal">
+        <div class="container">
+            <div class="cabecalho-pagina">
+                <h1 class="titulo-pagina">Gerenciar Funcionários</h1>
+                <div class="acoes">
+                    <input type="text" placeholder="Buscar funcionário..." class="campo-busca">
+                    <a href="tela-cadastro-funcionario.html" class="btn-primario">Novo Funcionário</a>
+                </div>
+            </div>
+
+            <div class="tabela-container">
+                <table class="tabela-funcionarios">
+                    <thead>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Cargo</th>
+                            <th>Email</th>
+                            <th>Telefone</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Funcionário 1 -->
+                        <tr>
+                            <td>
+                                <div class="foto-funcionario">
+                                    <img src="https://via.placeholder.com/40x40/ff5722/ffffff?text=JS" alt="João Silva" class="avatar">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="info-funcionario">
+                                    <span class="nome">João Silva</span>
+                                    <span class="data-cadastro">Cadastrado em: 15/01/2024</span>
+                                </div>
+                            </td>
+                            <td>123.456.789-00</td>
+                            <td>
+                                <span class="cargo gerente">Gerente</span>
+                            </td>
+                            <td>joao.silva@xhopii.com</td>
+                            <td>(11) 99999-1234</td>
+                            <td>
+                                <span class="status ativo">Ativo</span>
+                            </td>
+                            <td>
+                                <div class="acoes-funcionario">
+                                    <button class="btn-editar" title="Editar">✏️</button>
+                                    <button class="btn-visualizar" title="Visualizar">👁️</button>
+                                    <button class="btn-desativar" title="Desativar">🚫</button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Funcionário 2 -->
+                        <tr>
+                            <td>
+                                <div class="foto-funcionario">
+                                    <img src="https://via.placeholder.com/40x40/ff5722/ffffff?text=MS" alt="Maria Santos" class="avatar">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="info-funcionario">
+                                    <span class="nome">Maria Santos</span>
+                                    <span class="data-cadastro">Cadastrado em: 20/02/2024</span>
+                                </div>
+                            </td>
+                            <td>987.654.321-00</td>
+                            <td>
+                                <span class="cargo vendedor">Vendedor</span>
+                            </td>
+                            <td>maria.santos@xhopii.com</td>
+                            <td>(11) 98888-5678</td>
+                            <td>
+                                <span class="status ativo">Ativo</span>
+                            </td>
+                            <td>
+                                <div class="acoes-funcionario">
+                                    <button class="btn-editar" title="Editar">✏️</button>
+                                    <button class="btn-visualizar" title="Visualizar">👁️</button>
+                                    <button class="btn-desativar" title="Desativar">🚫</button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Funcionário 3 -->
+                        <tr>
+                            <td>
+                                <div class="foto-funcionario">
+                                    <img src="https://via.placeholder.com/40x40/ff5722/ffffff?text=PC" alt="Pedro Costa" class="avatar">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="info-funcionario">
+                                    <span class="nome">Pedro Costa</span>
+                                    <span class="data-cadastro">Cadastrado em: 10/03/2024</span>
+                                </div>
+                            </td>
+                            <td>456.789.123-00</td>
+                            <td>
+                                <span class="cargo estoquista">Estoquista</span>
+                            </td>
+                            <td>pedro.costa@xhopii.com</td>
+                            <td>(11) 97777-9012</td>
+                            <td>
+                                <span class="status ativo">Ativo</span>
+                            </td>
+                            <td>
+                                <div class="acoes-funcionario">
+                                    <button class="btn-editar" title="Editar">✏️</button>
+                                    <button class="btn-visualizar" title="Visualizar">👁️</button>
+                                    <button class="btn-desativar" title="Desativar">🚫</button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Funcionário 4 -->
+                        <tr>
+                            <td>
+                                <div class="foto-funcionario">
+                                    <img src="https://via.placeholder.com/40x40/ff5722/ffffff?text=AL" alt="Ana Lima" class="avatar">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="info-funcionario">
+                                    <span class="nome">Ana Lima</span>
+                                    <span class="data-cadastro">Cadastrado em: 05/04/2024</span>
+                                </div>
+                            </td>
+                            <td>789.123.456-00</td>
+                            <td>
+                                <span class="cargo vendedor">Vendedor</span>
+                            </td>
+                            <td>ana.lima@xhopii.com</td>
+                            <td>(11) 96666-3456</td>
+                            <td>
+                                <span class="status ativo">Ativo</span>
+                            </td>
+                            <td>
+                                <div class="acoes-funcionario">
+                                    <button class="btn-editar" title="Editar">✏️</button>
+                                    <button class="btn-visualizar" title="Visualizar">👁️</button>
+                                    <button class="btn-desativar" title="Desativar">🚫</button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Funcionário 5 - Inativo -->
+                        <tr>
+                            <td>
+                                <div class="foto-funcionario">
+                                    <img src="https://via.placeholder.com/40x40/ff5722/ffffff?text=CS" alt="Carlos Souza" class="avatar">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="info-funcionario">
+                                    <span class="nome">Carlos Souza</span>
+                                    <span class="data-cadastro">Cadastrado em: 12/01/2024</span>
+                                </div>
+                            </td>
+                            <td>321.654.987-00</td>
+                            <td>
+                                <span class="cargo vendedor">Vendedor</span>
+                            </td>
+                            <td>carlos.souza@xhopii.com</td>
+                            <td>(11) 95555-7890</td>
+                            <td>
+                                <span class="status inativo">Inativo</span>
+                            </td>
+                            <td>
+                                <div class="acoes-funcionario">
+                                    <button class="btn-editar" title="Editar">✏️</button>
+                                    <button class="btn-visualizar" title="Visualizar">👁️</button>
+                                    <button class="btn-ativar" title="Ativar">✅</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="paginacao">
+                <div class="info-paginacao">
+                    Mostrando 5 de 5 funcionários
+                </div>
+                <div class="controles-paginacao">
+                    <button class="btn-paginacao" disabled>« Anterior</button>
+                    <span class="pagina-atual">1</span>
+                    <button class="btn-paginacao" disabled>Próximo »</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container-rodape">
+            <div class="coluna-rodape">
+                <h4 class="titulo-coluna-rodape">ATENDIMENTO AO CLIENTE</h4>
+                <ul class="lista-links-rodape">
+                    <li><a href="#" class="link-rodape">Central de ajuda</a></li>
+                    <li><a href="#" class="link-rodape">Como comprar</a></li>
+                    <li><a href="#" class="link-rodape">Métodos de pagamento</a></li>
+                    <li><a href="#" class="link-rodape">Garantia Xhopii</a></li>
+                    <li><a href="#" class="link-rodape">Devolução e Reembolso</a></li>
+                    <li><a href="#" class="link-rodape">Fale Conosco</a></li>
+                    <li><a href="#" class="link-rodape">Ouvidoria</a></li>
+                </ul>
+            </div>
+            
+            <div class="coluna-rodape">
+                <h4 class="titulo-coluna-rodape">SOBRE A XHOPII</h4>
+                <ul class="lista-links-rodape">
+                    <li><a href="#" class="link-rodape">Sobre nós</a></li>
+                    <li><a href="#" class="link-rodape">Política Xhopii</a></li>
+                    <li><a href="#" class="link-rodape">Politica de Privacidade</a></li>
+                    <li><a href="#" class="link-rodape">Programa Aliados Xhopii</a></li>
+                    <li><a href="#" class="link-rodape">Ofertas relâmpago</a></li>
+                    <li><a href="#" class="link-rodape">Xhopii Blog</a></li>
+                    <li><a href="#" class="link-rodape">Impresa</a></li>
+                </ul>
+            </div>
+            
+            <div class="coluna-rodape coluna-pagamento">
+                <h4 class="titulo-coluna-rodape">PAGAMENTO</h4>
+                <div class="formas-pagamento">
+                    <div class="linha-pagamento">
+                        <img src="..\assets\img\logo-visa.png" alt="">
+                        <img src="..\assets\img\logo-mastercard.png" alt="">
+                        <img src="..\assets\img\logo-elo.png" alt="">
+                    </div>
+                    <div class="linha-pagamento">
+                        <img src="..\assets\img\logo-american-express.png" alt="">
+                        <img src="..\assets\img\logo-hipercard.png" alt="">
+                        <img src="..\assets\img\logo-pix.png" alt="">
+                    </div>
+                    <div class="linha-pagamento">
+                        <img src="..\assets\img\logo-boleto.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="coluna-rodape coluna-redes">
+                <h4 class="titulo-coluna-rodape">SIGA-NOS</h4>
+                <ul class="lista-redes-sociais">
+                  <li><img src="..\assets\img\logo-instagram.png" alt="" class="icone-rede"> Instagram</li>
+                  <li><img src="..\assets\img\logo-twitter.png" alt="" class="icone-rede"> Twitter</li>
+                  <li><img src="..\assets\img\logo-facebook.png" alt="" class="icone-rede"> Facebook</li>
+                  <li><img src="..\assets\img\logo-youtube.png" alt="" class="icone-rede"> Youtube</li>
+                  <li><img src="..\assets\img\logo-linkedln.png" alt="" class="icone-rede"> Linkedin</li>
+                </ul>
+            </div>
+            
+            <div class="coluna-rodape coluna-atendimento">
+                <h4 class="titulo-coluna-rodape">ATENDIMENTO AO CLIENTE</h4>
+                <div class="qr-code-container">
+                    <img src="..\assets\img\qr-code.png" alt="">
+                    <p class="texto-qr">Baixe o APP</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="linha-rodape-inferior">
+            <div class="container-inferior">
+                <p class="texto-copyright">© 2025 Xhopii. Todos Direitos Academicos Reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

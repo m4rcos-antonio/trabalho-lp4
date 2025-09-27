@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xhopii - Cadastro de Loja</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <!-- Linha Superior -->
+        <div class="linha-superior">
+            <div class="container-superior">
+                <div class="logo">
+                    <div>
+                        <div>
+                          <img src="..\assets\img\logo.png" alt="" class="imagem-logo">
+                        </div>
+                    </div>
+                    <span class="texto-logo">Xhopii</span>
+                </div>
+                <div class="usuario-area">
+                    <a href="#" class="link-sair">Sair</a>
+                </div>
+            </div>
+        </div>
+        <!-- Linha Inferior - Navbar -->
+        <div class="linha-inferior">
+            <div class="container-navbar">
+                <nav class="navegacao">
+                    <ul class="menu-principal">
+                        <li><a href="home.html" class="link-menu">Home</a></li>
+                        <li><a href="tela-cadastro.html" class="link-menu">Cadastro Cliente</a></li>
+                        <li><a href="tela-cadastro-funcionario.html" class="link-menu">Cadastro Funcionário</a></li>
+                        <li><a href="tela-cadastro-produto.html" class="link-menu">Cadastro Produto</a></li>
+                        <li><a href="#" class="link-menu">Ver Clientes</a></li>
+                        <li><a href="#" class="link-menu">Ver Funcionário</a></li>
+                        <li><a href="#" class="link-menu">Ver Produto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="form-container">
+            <h2 class="form-title">Cadastrar Loja</h2>
+            
+            <form class="cadastro-form">
+                <div class="form-section">
+                    <h3 class="section-title">Informações Básicas</h3>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="nome-loja" class="input-label">Nome da Loja</label>
+                            <input type="text" id="nome-loja" placeholder="Ex: Loja do João" class="input-field" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="nome-fantasia" class="input-label">Nome Fantasia</label>
+                            <input type="text" id="nome-fantasia" placeholder="Ex: João's Store" class="input-field">
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="cnpj" class="input-label">CNPJ</label>
+                            <input type="text" id="cnpj" placeholder="00.000.000/0000-00" class="input-field" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="inscricao-estadual" class="input-label">Inscrição Estadual</label>
+                            <input type="text" id="inscricao-estadual" placeholder="000.000.000.000" class="input-field">
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="categoria" class="input-label">Categoria</label>
+                        <select id="categoria" class="input-field select-field" required>
+                            <option value="">Selecione a categoria</option>
+                            <option value="roupas">Roupas e Acessórios</option>
+                            <option value="eletronicos">Eletrônicos</option>
+                            <option value="casa">Casa e Decoração</option>
+                            <option value="esportes">Esportes e Lazer</option>
+                            <option value="beleza">Beleza e Cuidados</option>
+                            <option value="livros">Livros e Mídia</option>
+                            <option value="alimentacao">Alimentação</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3 class="section-title">Endereço</h3>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="cep" class="input-label">CEP</label>
+                            <input type="text" id="cep" placeholder="00000-000" class="input-field" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="logradouro" class="input-label">Logradouro</label>
+                            <input type="text" id="logradouro" placeholder="Rua, Avenida, etc." class="input-field" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="numero" class="input-label">Número</label>
+                            <input type="text" id="numero" placeholder="123" class="input-field" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="complemento" class="input-label">Complemento</label>
+                            <input type="text" id="complemento" placeholder="Apto, Sala, etc." class="input-field">
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="bairro" class="input-label">Bairro</label>
+                            <input type="text" id="bairro" placeholder="Nome do bairro" class="input-field" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="cidade" class="input-label">Cidade</label>
+                            <input type="text" id="cidade" placeholder="Nome da cidade" class="input-field" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="estado" class="input-label">Estado</label>
+                        <select id="estado" class="input-field select-field" required>
+                            <option value="">Selecione o estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3 class="section-title">Contato</h3>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="telefone" class="input-label">Telefone</label>
+                            <input type="tel" id="telefone" placeholder="(11) 99999-9999" class="input-field" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="email" class="input-label">Email</label>
+                            <input type="email" id="email" placeholder="loja@exemplo.com" class="input-field" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="website" class="input-label">Website (opcional)</label>
+                        <input type="url" id="website" placeholder="https://www.minhaloja.com" class="input-field">
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3 class="section-title">Configurações</h3>
+                    
+                    <div class="input-group">
+                        <label for="descricao" class="input-label">Descrição da Loja</label>
+                        <textarea id="descricao" placeholder="Descreva sua loja, produtos e serviços..." class="input-field textarea-field" rows="4"></textarea>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="entrega-domicilio" class="checkbox-field">
+                            <span class="checkbox-text">Oferece entrega a domicílio</span>
+                        </label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="retirada-loja" class="checkbox-field" checked>
+                            <span class="checkbox-text">Permite retirada na loja</span>
+                        </label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="loja-ativa" class="checkbox-field" checked>
+                            <span class="checkbox-text">Loja ativa</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="photo-section">
+                    <p class="photo-label">Logo da Loja:</p>
+                    <div class="file-input-group">
+                        <label for="file-upload" class="custom-file-upload">
+                            Escolher arquivo
+                        </label>
+                        <input id="file-upload" type="file" accept="image/*"/>
+                        <span class="file-name">Nenhum arquivo escolhido</span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-button">CADASTRAR LOJA</button>
+            </form>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="container-rodape">
+            <div class="coluna-rodape">
+                <h4 class="titulo-coluna-rodape">ATENDIMENTO AO CLIENTE</h4>
+                <ul class="lista-links-rodape">
+                    <li><a href="#" class="link-rodape">Central de ajuda</a></li>
+                    <li><a href="#" class="link-rodape">Como comprar</a></li>
+                    <li><a href="#" class="link-rodape">Métodos de pagamento</a></li>
+                    <li><a href="#" class="link-rodape">Garantia Xhopii</a></li>
+                    <li><a href="#" class="link-rodape">Devolução e Reembolso</a></li>
+                    <li><a href="#" class="link-rodape">Fale Conosco</a></li>
+                    <li><a href="#" class="link-rodape">Ouvidoria</a></li>
+                </ul>
+            </div>
+            
+            <div class="coluna-rodape">
+                <h4 class="titulo-coluna-rodape">SOBRE A XHOPII</h4>
+                <ul class="lista-links-rodape">
+                    <li><a href="#" class="link-rodape">Sobre nós</a></li>
+                    <li><a href="#" class="link-rodape">Política Xhopii</a></li>
+                    <li><a href="#" class="link-rodape">Politica de Privacidade</a></li>
+                    <li><a href="#" class="link-rodape">Programa Aliados Xhopii</a></li>
+                    <li><a href="#" class="link-rodape">Ofertas relâmpago</a></li>
+                    <li><a href="#" class="link-rodape">Xhopii Blog</a></li>
+                    <li><a href="#" class="link-rodape">Impresa</a></li>
+                </ul>
+            </div>
+            
+            <div class="coluna-rodape coluna-pagamento">
+                <h4 class="titulo-coluna-rodape">PAGAMENTO</h4>
+                <div class="formas-pagamento">
+                    <div class="linha-pagamento">
+                        <img src="..\assets\img\logo-visa.png" alt="">
+                        <img src="..\assets\img\logo-mastercard.png" alt="">
+                        <img src="..\assets\img\logo-elo.png" alt="">
+                    </div>
+                    <div class="linha-pagamento">
+                        <img src="..\assets\img\logo-american-express.png" alt="">
+                        <img src="..\assets\img\logo-hipercard.png" alt="">
+                        <img src="..\assets\img\logo-pix.png" alt="">
+                    </div>
+                    <div class="linha-pagamento">
+                        <img src="..\assets\img\logo-boleto.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="coluna-rodape coluna-redes">
+                <h4 class="titulo-coluna-rodape">SIGA-NOS</h4>
+                <ul class="lista-redes-sociais">
+                  <li><img src="..\assets\img\logo-instagram.png" alt="" class="icone-rede"> Instagram</li>
+                  <li><img src="..\assets\img\logo-twitter.png" alt="" class="icone-rede"> Twitter</li>
+                  <li><img src="..\assets\img\logo-facebook.png" alt="" class="icone-rede"> Facebook</li>
+                  <li><img src="..\assets\img\logo-youtube.png" alt="" class="icone-rede"> Youtube</li>
+                  <li><img src="..\assets\img\logo-linkedln.png" alt="" class="icone-rede"> Linkedin</li>
+                </ul>
+            </div>
+            
+            <div class="coluna-rodape coluna-atendimento">
+                <h4 class="titulo-coluna-rodape">ATENDIMENTO AO CLIENTE</h4>
+                <div class="qr-code-container">
+                    <img src="..\assets\img\qr-code.png" alt="">
+                    <p class="texto-qr">Baixe o APP</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="linha-rodape-inferior">
+            <div class="container-inferior">
+                <p class="texto-copyright">© 2025 Xhopii. Todos Direitos Academicos Reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
