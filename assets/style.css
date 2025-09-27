@@ -10,9 +10,6 @@ body {
     line-height: 1.4;
     color: #333;
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 /* Cabeçalho */
@@ -2394,8 +2391,4 @@ body {
     .conteudo-sobre p {
         font-size: 14px;
     }
-}
-
-main {
-    flex-grow: 1;
 }
